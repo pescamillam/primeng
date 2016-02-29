@@ -1,5 +1,5 @@
 /*
- * PrimeUI 4.1.1-SNAPSHOT
+ * PrimeUI 4.1.2-SNAPSHOT
  * 
  * Copyright 2009-2015 PrimeTek.
  *
@@ -571,8 +571,6 @@ button.ui-button::-moz-focus-inner {
 .ui-datatable-scrollable .ui-datatable-scrollable-header td {
     font-weight: normal;
 }
-
-
 
 .ui-datatable .ui-datatable-scrollable-body  {
     min-height: 0%;

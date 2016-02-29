@@ -5,7 +5,7 @@ import {DataTable} from '../../../components/datatable/datatable';
 import {Button} from '../../../components/button/button';
 import {InputText} from '../../../components/inputtext/inputtext';
 import {Dialog} from '../../../components/dialog/dialog';
-import {pCode} from '../../../components/codehighlighter/codehighlighter';
+import {CodeHighlighter} from '../../../components/codehighlighter/codehighlighter';
 import {TabView} from '../../../components/tabview/tabview';
 import {TabPanel} from '../../../components/tabview/tabpanel';
 import {Car} from '../domain/car';
@@ -17,7 +17,7 @@ import {Footer} from '../../../components/common/footer';
 
 @Component({
     templateUrl: 'showcase/demo/datatable/datatablecruddemo.html',
-    directives: [DataTable,DataTableSubmenu,TabPanel,TabView,pCode,Header,Footer,Dialog,Button,InputText,ROUTER_DIRECTIVES],
+    directives: [DataTable,DataTableSubmenu,TabPanel,TabView,CodeHighlighter,Header,Footer,Dialog,Button,InputText,ROUTER_DIRECTIVES],
     providers: [HTTP_PROVIDERS,CarService],
     styles: [`
         .ui-grid-row div {
@@ -49,10 +49,10 @@ export class DataTableCrudDemo implements OnInit {
         this.carService.getCarsSmall().then(cars => this.cars = cars);
 
         this.cols = [
-            {field: 'vin', header: 'Vin', sortable: true, filter: true},
-            {field: 'brand', header: 'Brand', sortable: true, filter: true},
-            {field: 'year', header: 'Year', sortable: true, filter: true},
-            {field: 'color', header: 'Color', sortable: true, filter: true}
+            {field: 'vin', header: 'Vin', sortable: true},
+            {field: 'brand', header: 'Brand', sortable: true},
+            {field: 'year', header: 'Year', sortable: true},
+            {field: 'color', header: 'Color', sortable: true}
         ];
     }
     

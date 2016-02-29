@@ -1,14 +1,11 @@
 {
   "name": "primeng",
-  "version": "v0.5.0-SNAPSHOT",
+  "version": "v0.6.0-SNAPSHOT",
   "scripts": {
-    "postinstall": "npm run typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
-    "prepublish": "tsc",
-    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
-    "typings" : "typings"
+    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" "
   },
   "license": "ISC",
   "dependencies": {
